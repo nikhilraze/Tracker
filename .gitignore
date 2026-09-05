@@ -14,6 +14,13 @@ __pycache__/
 .Python
 
 # Runtime Data
+# Default data dir is ~/.neurotrack, but keep these out if it is pointed here.
+.neurotrack/
+*.db
+*.db-wal
+*.db-shm
+*.joblib
+# Legacy CSV logs from v0.1
 usage_log.csv
 usage_log_legacy_*.csv
 
@@ -28,3 +35,4 @@ usage_log_legacy_*.csv
 *.egg
 .pytest_cache/
 .coverage
+.ruff_cache/
